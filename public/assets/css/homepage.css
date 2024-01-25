@@ -84,8 +84,12 @@ body {
   justify-content: space-between;
   margin-left: -3em;
 }
+.hero .hero-inner .hero-text {
+  padding-right: 3em;
+}
 .hero .hero-inner .hero-text .headline {
   margin-bottom: 0.5em;
+  padding-right: 3em;
   font-size: 2em;
 }
 .hero .hero-inner .hero-text p {
