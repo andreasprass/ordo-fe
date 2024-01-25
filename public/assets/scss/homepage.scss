@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap');
+
+*{
+    font-family:'Outfit', sans-serif;
+    font-size: 24px;
+    margin: 0;
+
+}
+
+// Color Pallets
+$primary-color: #15548D;
+$primary-text-color: #fff;
+// --
+$secondary-color: #F7F8FD;
+$secondary-text-color: #333333; 
+// --
+$highlight: #FAC568;
+$highlight-hover: #e6ad4c;
+// --
+
+
+body{
+    width: 100%;
+}
+.yellow-line{
+    height: 3px;
+    width: 2em;
+    border-radius: 10px;
+    background-color: $highlight;
+}
+.theme{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    h6{
+        margin: 0 0 0 1em;
+    }
+}
+
+// Navbar
+.nav{
+    height: 7em;
+    width: 100%;
+    position: absolute;
+
+    .navigation{
+        height: 100%;
+        display: flex;
+        margin-left: -2em;
+        align-items: center;
+        
+        .navigation-head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navigation-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 2em;
+            margin-left: 3em;
+
+            .link{
+                text-decoration: none;
+                color: $primary-text-color;
+            }
+        }
+
+        button{
+            z-index: 2;
+            height: 3em;
+            width: fit-content;
+            margin-left: auto;
+            padding: 0 1em 0 1em;
+            border: 0;
+            color: $primary-text-color;
+            background-color: $primary-color;
+            
+        }
+    }
+    
+}
+// End Navbar
+
+
+// Hero
+.hero{
+    width: 100%;
+    height: 90vh;
+    padding-top: 10em;
+    padding-bottom: 4em;
+    background-color: $primary-color;
+    color: $primary-text-color;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+
+    .container{
+        height: 90% !important;
+    }
+    .hero-inner{
+        display: flex;
+        justify-content: space-between;
+        margin-left: -3em;
+
+        .hero-text{
+
+
+            .headline{
+                margin-bottom: 0.5em;
+                font-size: 2em;
+            }
+            p{
+                font-size: 1.1em;
+            }
+            button{
+                background-color: $highlight;
+                border:0;
+                font-size: 1.2em;
+                font-weight:500;
+                padding: 1em 3em 1em 3em;
+                margin-top: 1em;
+            }
+        }
+
+        .hero-image{
+            width: 100%;
+            height: 190%;
+            margin-top: -19%;
+            margin-right: -23.53%;
+            z-index: 1;
+            // margin-right: 0%;
+            max-height: max-content;
+            img{
+                height: 100%;
+                width: 100%;
+                // margin-top: -20%;
+                // margin-right: -100%;
+            }
+        }
+    }
+    .scroll{
+        display: flex;
+        justify-content: end;
+        height: 10%;
+        margin-left: -5%;
+        transform-origin: -200% 300%;
+        transform: rotate(90deg);
+        i{
+            margin-left: 1em;
+        }
+    }
+}
+// End Hero
+
+// Workflow
+.workflow{
+    width: 100%;
+    padding-top: 5em;
+
+    .workflow-header{
+        width: 60%;
+    }
+
+    .content{
+
+        .line{
+            img{
+                width: 100%;
+                margin-top: -13em;
+                z-index: 0;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            
+        }
+
+        .workflow-box{
+            z-index: 1;
+            margin-bottom: 2em;
+
+            .container{
+                display: flex;
+                justify-content: space-between;
+                column-gap: 2em;
+                margin-top: -10em;
+
+                #flow-1{
+                    margin-top: 5em;
+                    margin-left: -4em;
+                }
+                #flow-2{
+                    margin-top: 1em;
+                }
+                #flow-3{
+                    margin-top: 2em;
+                }
+                #flow-4{
+                    margin-top: -3em;
+                    margin-right: -7em;
+                }
+
+                .workflow-col{
+                    width: auto;
+                    height: fit-content;
+    
+                    .icon{
+                        height: min-content;
+                        width: min-content;
+                        border-radius: 100%;
+                        background-color: $primary-text-color;
+                         /* https://smoothshadows.com/#djEsMSwzLDAuMjIsMTUzLDAsMCwjZmFjNTY4LCNmM2Y0ZjYsI2ZmZmZmZiwz */
+                        box-shadow: 0px 0px 17px rgba(250, 197, 104, 0.07),
+                        0px 0px 68px rgba(250, 197, 104, 0.15),
+                        0px 0px 153px rgba(250, 197, 104, 0.22);
+                        padding: 1.5em 1.5em 1.5em 1.5em;
+                        margin-bottom: 1em;
+                    }
+
+                    .text{
+                        font-size: 0.4em;
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+
+    
+}
+// End Workflow
+
+// Start Services
+.services{
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background-color: $secondary-color;
+
+    .card-box{
+        display: flex;
+        margin-top: 3em;
+        column-gap: 3em;
+        justify-content: center;
+
+        .card-item{
+            background-color: $primary-text-color;
+            padding: 2em 2em 2em 2em;
+            border-radius: 10%;
+            border: 1px ;
+            width: 20em;
+            height: 20em;
+
+            .card-head{
+                display: flex;
+
+                .number{
+                    color: $highlight;
+                    font-size: 2em;
+                    font-weight: 600;
+                }
+            }
+
+            h4{
+                width: 90%;
+            }
+
+            button{
+                background-color: $highlight;
+                margin-top: 1em;
+                border: 0;
+                padding: 0.5em 2em 0.5em 2em;
+            }
+        }
+    }
+    
+}
+// End Services
+
+// Start Latest Project
+.latest-project{
+    background-color: $primary-text-color;
+    padding-bottom: 5em;
+
+    .latest-project-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5em;
+         
+        .theme{
+            margin-bottom: 1em;
+        }
+
+        .latest-project-slide{
+            margin-top: 2em;
+
+            img{
+                height: 20em;
+            }
+
+            .slide-nav-button{
+                width: 4em;
+                height: 4em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 0;
+                border-radius: 100%;
+                background-color: $highlight;
+            }
+            // #slide-right{
+
+            // }
+            // #slide-left{
+               
+            // }
+        }
+
+        .slide-wrapper{
+            display: flex;
+            margin-left: -2em;
+            margin-right: -2em;
+            margin-top: -20em;
+            height: 20em;
+            justify-content: center;
+            align-items: center;
+
+            .lihat-detail{
+                display: flex;
+                align-items: center;
+                margin-bottom: 3em;
+                margin-right: 2em;
+
+                h5{
+                    margin-left: 1em;
+                }
+            }
+            
+            .text{
+                margin-left: 4em;
+            }
+        }
+        
+    }
+}
+
+// End Latest Project
+
+// Testimonial Start
+.testimonials{
+    width: 100%;
+    padding-top: 5em;
+    background-color: $secondary-color;
+    padding-bottom: 5em;
+
+    .container{
+        display: flex;
+
+        .testimonial-desc{
+            margin-top: 2em;
+
+            .testimonial-text{
+                display: flex;
+                margin-top: 2em;
+                margin-left: 1em;
+
+                img{
+                    height: 2em;
+                }
+                p{
+                    margin-left: 1em;
+                    font-size: 1.5em;
+                    font-weight: 400;
+                    width: 80%;
+                }
+            }
+            .testimonial-credit{
+                display: flex;
+                margin-top: 2em;
+                .testimonial-name{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 1.5em;
+                    h3{
+                        margin-bottom: 0;
+                    }
+                    p{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .blue-button{
+            width: 19em;
+            height: 4.5em;
+            background-color: $primary-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2em 0 2em;
+            margin-top: 5em;
+            margin-right: -5em;
+            z-index: 1;
+            color: $primary-text-color;
+        }
+        .testimonial-image{
+            width: 200%;
+            margin-right: -24.1%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+// Testimonial End
+
+// Contact Start
+.contact{
+    background-color: $primary-text-color;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    display: flex;
+    font-size: 0.3em;
+    
+    .container{
+        display: flex;
+
+
+        .contact-desc{
+            padding-top: 7em;
+            width: 50%;
+            h3{
+                font-weight: 600;
+            }
+            p{
+                width: 80%;
+                font-weight: 300;
+            }
+        }
+        .contact-form{
+            margin-left: auto;
+            background-color: #F8F8F8;
+            padding: 2.5em;
+            height: min-content;
+            border-radius: 10px;
+            form{
+
+                .form-group{
+                    margin-bottom: 2em !important;
+                    
+
+                    label{
+                        margin-bottom: 0.5em;
+                    }
+
+                    input{
+                        height: 3em;
+                        width: 100%;
+                        padding-left: 1em;
+                        border-radius: 15px;
+                        border: 0px;
+                        border-color: $secondary-color
+                    };
+
+                    input:focus{
+                        border: 1px;
+                        border-color: $highlight;
+                    }
+                }
+                .konsultasi-button{
+                    padding: 1em;
+                    width: 100%;
+                    margin-bottom: 0;
+                    border-radius: 50px;
+                    border: 0;
+                    background-color: $highlight;
+                }
+            }
+            
+        }
+    }
+        
+}
+// Contact end
+
+// Footer start
+footer{
+    width: 100%;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background-color: #15548D;
+    color: $primary-text-color;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+
+    .logo-footer{
+        margin-bottom: 1em;
+    }
+
+    h4{
+        margin-bottom: 0.5em;
+    }
+
+    a{
+        text-decoration: none;
+        color: $primary-text-color;
+        margin-bottom: 0.5em;
+    }
+
+    hr{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .links{
+        display: flex;
+        margin-top: 2em;
+        justify-content: space-between;
+
+        .halaman-utama{
+            display: flex;
+            flex-direction: column;
+        }
+        .perusahaan{
+            display: flex;
+            flex-direction: column;
+        }
+        .temukan-kami{
+            display: flex;
+            flex-direction: column;
+        }
+        .social-media{
+                .icons{
+                    display: flex;
+                    justify-content: space-between;
+                    i{
+                        font-size: 2em;
+                    }
+                }
+        }
+    }
+
+    .syarat-dan-bahasa{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .syarat-ketentuan{
+            display: flex;
+            flex-direction: column;
+            a{
+                text-decoration: underline;
+            }
+        }
+    
+        .language{
+    
+            .bahasa-button{
+                padding: 0.5em 1em 0.5em 1em;
+                margin-left: 1em;
+                border: 0;
+                border-radius: 30px;
+                color: $primary-text-color;
+                background-color: #266097;
+            }
+        }
+    }   
+    .copyright{
+        margin-top: 4em;
+    }
+    
+}
+// Footer end
+    
+
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1400px) { 
+//     .hero{
+//         .hero-inner{
+//             .hero-image{
+//                 margin-left: 5.7em;
+        
+//             }
+//         }
+//     }
+
+//     .testimonials{
+//         .container{
+//             .testimonial-image{
+//                 margin-right: 0em ;
+//             }
+//         }
+        
+//     }
+// }
+
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1920px) { 
+
+// }
+
+
+
+
+
